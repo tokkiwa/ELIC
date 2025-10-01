@@ -4,7 +4,10 @@ import torch.nn as nn
 import torch.nn.functional as F
 from compressai.models import CompressionModel
 from compressai.entropy_models import GaussianConditional
-from compressai.ops import ste_round
+try:
+    from compressai.ops import ste_round
+except:
+    from compressai.ops import quantize_ste as ste_round
 from compressai.ans import BufferedRansEncoder, RansDecoder
 from utils.func import update_registered_buffers, get_scale_table
 from utils.ckbd import *
