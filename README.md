@@ -1,3 +1,6 @@
+Note: This is the fork of [Jiangweibeta's ELIC implementation. ](https://github.com/JiangWeibeta/ELIC)
+I only removed the compressai's depricated modules for compatibility.  
+
 # ELIC
 Unofficial Implementation of CVPR22 papar "ELIC: Efficient Learned Image Compression with Unevenly Grouped Space-Channel Contextual Adaptive Coding".
 
